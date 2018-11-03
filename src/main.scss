@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+$main-color: #fa8072;
+$secondary-color: #cacaca;
+
+
+body {
+    background: $secondary-color;
+}
+
+.app {
+    .main-heading {
+        margin: 20px;
+        color: $main-color;
+        text-align: center;
+    }
+
+    .main-logo {
+        display: block;
+        height: 100px;
+        width: 100px;
+        margin: 100px auto;
+        border: 2px solid $main-color;
+        border-radius: 50%;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+    }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
